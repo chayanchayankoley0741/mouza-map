@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mouza Map</title>
-  <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mouza Map - Subirchak</title>
+  
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <h2>Mouza: Subirchak | J.L: 90</h2>
-  </header>
 
+  <!-- Header bar -->
+  <div class="header-bar">
+    Mouza: Subirchak &nbsp; | &nbsp; J.L: 90
+  </div>
+
+  <!-- Map container -->
   <div id="map"></div>
-
-  <!-- Locate Me Button -->
-  <button id="locateBtn">📍 Locate Me</button>
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <!-- Turf.js -->
-  <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
-  <!-- Custom JS -->
+  <!-- Turf.js for spatial operations -->
+  <script src="https://unpkg.com/@turf/turf/turf.min.js"></script>
+
+  <!-- Our JS -->
   <script src="script.js"></script>
 </body>
 </html>
