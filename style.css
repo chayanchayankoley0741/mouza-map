@@ -1,40 +1,44 @@
-body, html {
+/* Fullscreen map */
+#map {
+  height: 100vh;
+  width: 100%;
   margin: 0;
   padding: 0;
-  height: 100%;
-  font-family: Arial, sans-serif;
 }
 
-header {
-  text-align: center;
-  padding: 8px;
-  background: #2c3e50;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-#map {
-  height: calc(100% - 50px);
-  width: 100%;
-}
-
-#locateBtn {
-  position: absolute;
-  top: 70px;
-  right: 15px;
-  z-index: 1000;
-  padding: 12px 18px;
-  background: #e74c3c;
-  color: white;
-  border: none;
+/* Locate Me button */
+.locate-btn {
+  background: white;
+  border: 2px solid #444;
   border-radius: 50%;
-  font-size: 22px;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
   cursor: pointer;
+  text-align: center;
+  line-height: 36px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  transition: 0.3s;
+}
+.locate-btn:hover {
+  background: #f0f0f0;
 }
 
-#locateBtn:hover {
-  background: #c0392b;
+/* Info panel (Mouza + Plot info) */
+.info {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  min-width: 160px;
+}
+.info h4 {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+.info b {
+  color: #e74c3c;
 }
