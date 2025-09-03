@@ -6,7 +6,7 @@ let infoControl;
 
 // ------------------ Initialize Map ------------------
 document.addEventListener("DOMContentLoaded", function () {
-    map = L.map("map").setView([22.57, 88.36], 16); // change to your mouza center
+    map = L.map("map").setView([22.57, 88.36], 18); // change to your mouza center
 
     // Add OSM base layer
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -157,3 +157,4 @@ function error(err) {
     console.warn("Geolocation error:", err);
     alert("Location detection failed: " + err.message);
 }
+
